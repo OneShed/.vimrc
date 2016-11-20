@@ -13,8 +13,9 @@ set hlsearch
 " highlight matching parenthenesses
 set showmatch
  
-" perl settings
+" perl & python settings
 autocmd FileType perl setlocal tabstop=4 shiftwidth=4 expandtab softtabstop=4 showmatch foldmethod=marker textwidth=78
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab softtabstop=4 showmatch foldmethod=marker textwidth=78
 colorsche zellner
 "   blue
 "   darkblue
@@ -44,6 +45,7 @@ let Tlist_File_Fold_Auto_Close = 1  "close fold for inactive buffers
 let Tlist_GainFocus_On_ToggleOpen = 1 " switch automatically to taglist
  
 autocmd FileType perl setlocal tabstop=4 shiftwidth=4 expandtab softtabstop=4 showmatch foldmethod=marker textwidth=78
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab softtabstop=4 showmatch foldmethod=marker textwidth=78
 autocmd FileType php  setlocal tabstop=4 shiftwidth=4 expandtab softtabstop=4 showmatch foldmethod=marker textwidth=78  html no indent
 autocmd FileType html setlocal tabstop=4 shiftwidth=4 expandtab softtabstop=4 noautoindent nosi nocin inde=
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab softtabstop=2 foldmethod=marker tw=0
@@ -55,7 +57,7 @@ autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab softtabstop=2 fo
  let Tlist_GainFocus_On_ToggleOpen = 1 " switch automatically to taglist
 
 nnoremap <silent> <F3> :15sp<CR>
-nnoremap <F7> <Esc>:w<CR>:!perl %<CR>
+nnoremap <F7> <Esc>:w<CR>:! %<CR>
 nnoremap <F6> <Esc>:w<CR>:!perl -c %<CR>
 nnoremap <F8> :TlistToggle<CR>
 
